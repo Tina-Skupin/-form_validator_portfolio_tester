@@ -14,6 +14,9 @@ def validate_email(email):
     # Basic validation - check for @ symbol and period
     if '@' not in email or '.' not in email:
         return False
+    
+    if ' ' in email:
+        return False
         
     # Additional validation logic here
     return True
@@ -21,7 +24,6 @@ def validate_email(email):
 
 
 def main():
-    email = "tskupin32@gmail.com"
 
     Mailokay = validate_email(email)
     print (Mailokay)
