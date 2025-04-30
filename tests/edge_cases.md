@@ -1,8 +1,8 @@
 edge cases: 
 
+Mailadresses:
 should pass
-- umlaute, letters not existing in english
-- 
+- umlaute, letters not existing in english, internationalisation
 
 should not pass
 - more than one '@'

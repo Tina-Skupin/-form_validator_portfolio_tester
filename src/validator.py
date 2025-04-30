@@ -1,5 +1,29 @@
-"""enter mailadress for testing the code here
-email = "tina.skupin@gmail.com" """
+"""enter mailadress for testing the code here"""
+email = "tina.skupin@gmail.com"
+password = 42
+
+def validate_password(password):
+    """
+    Validates an password format.
+    args:
+        password(str): the password to validate
+        
+    Returns: 
+        bool True if valif, False otherwise"""
+    if not isinstance(password, str):
+        print ("not a string")
+        return False
+    
+    if len(password)< 11:
+        print ("Password too short")
+        return False
+    
+    if ' ' in password:
+        print ("password must not contain spaces")
+        return False
+
+    print ("Password: is valid")
+    return True
 
 def validate_email(email):
     """
@@ -37,6 +61,7 @@ def validate_email(email):
         return False
 
     # Additional validation logic here
+    print ("Email: is valid")
     return True
 
 
@@ -45,6 +70,9 @@ def main():
 
     Mailokay = validate_email(email)
     print (Mailokay)
+
+    Passwordokay = validate_password(password)
+    print (Passwordokay)
 
 if __name__ == "__main__":
     main()
