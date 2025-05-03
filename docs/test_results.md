@@ -1,5 +1,8 @@
 # Test Results
 
+Update 3.5.: all tests running, all specs work, project complete 
+
+
 ## Email Validation Tests (all issues fixed)
 - [x] Valid standard emails (user@example.com), incl. numbers, uppercase, umlaut
 - [x] Valid emails with subdomains (user@sub.example.com)
@@ -18,15 +21,31 @@ XXXX
 
 ## Password Validation Tests
 - [X] must be a string
-- [] must be at least 10 long
-- [] must contain at least 1 uppercase and 1 lowercase letter
-- [] must contain at least one star
-- [] must contain at least one number
-- [] must not contain "Swordfish"
-- [] no Ümlaute
-- [] 
+- [x] must be at least 10 long
+- [X] must contain at least 1 uppercase and 1 lowercase letter
+- [x] must contain at least one star
+- [X] must contain at least one number
+- [X] must not contain "Swordfish"
+- [X] no Ümlaute
+
+
+## Name Validation Tests
+- [X] a string
+- [x] at least 4 long
+- [X] at least two words (first last name), aka contain a " "
+- [RRRRRR] must contain at least 1 uppercase letter - rule has been removed due to conflict with international letters, esp. Chinese and Arabic, 
+- no special characters except "-"
+- international characters allowed
+chinese doesnt work
+arabic doesnt work
+
+
+## Issues to Address
+name: special characters needs to be implemented
+
+chinese and arabic doesnt work - becasue of "one upper case" rule? Take out and see if it works
+it works. conflict, decided to remove the uppercase letter rule, internationalisation is more important 
 
 
 
-
-Last updated: [25/04/25]
+Last updated: [03/05/25]

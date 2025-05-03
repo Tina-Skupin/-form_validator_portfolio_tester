@@ -9,3 +9,6 @@ should not pass
 - adresses with spaces
 - extremely long adresses (maximum length)
 - 
+
+Name:
+- no special characters except "-"
