@@ -1,6 +1,6 @@
 import unicodedata
 
-"""enter mailadress for testing the code here"""
+"""enter your data for testing the code here"""
 email = "tina.skupin@gmail.com"
 password = "HIPPOPOTAMUSINTHEHOLe42*"
 name = "Tina Skupin"
